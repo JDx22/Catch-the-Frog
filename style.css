@@ -1,0 +1,46 @@
+#container {
+    display: grid;
+    height: 80vh;
+    width: 80vw;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: "head" "g" "hud";
+    margin: auto;
+    margin-top: 10vh;
+}
+#header {
+    grid-area: head;
+    display:grid;
+    background-color:darkseagreen;
+}
+#game-main {
+    grid-area: g;
+    background-color:darkgreen;
+    position: relative;
+    padding: 1%;
+    box-sizing: border-box;
+}
+#hud {
+    grid-area: hud;
+    display:grid;
+    background-color:darkseagreen;
+    grid-template-columns: repeat(3,1fr);
+}
+#frogs-left {
+    display:grid;
+
+}
+#start {
+    display:grid;
+    background-color: darkmagenta;
+}
+#level {
+    display:grid;
+
+}
+.frog {
+    position:relative;
+    display:inline-block; 
+    height:10px;
+    width: 10px;  
+
+}
