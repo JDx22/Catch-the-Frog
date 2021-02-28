@@ -11,6 +11,8 @@
     grid-area: head;
     display:grid;
     background-color:darkseagreen;
+    justify-content: center;
+    align-content: center;
 }
 #game-main {
     grid-area: g;
@@ -27,15 +29,19 @@
 }
 #frogs-left {
     display:grid;
-
+    justify-content: center;
+    align-content: center;
 }
 #start {
     display:grid;
     background-color: darkmagenta;
+    justify-content: center;
+    align-content: center;
 }
 #level {
     display:grid;
-
+    justify-content: center;
+    align-content: center;
 }
 .frog {
     position:relative;
