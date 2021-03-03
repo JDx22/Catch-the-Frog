@@ -7,15 +7,17 @@ setInterval(function (){
 },40)
 
 $('#game-main').on('click','.frog', function() {
-    game.removeFrog();
-    renderer.render(game.getGameState());
+    if (game.getGameState().gameOn ) {
+        game.removeFrog();
+        renderer.render(game.getGameState());
+    }
    // alert('inside game-main on click ')
 })
 
-let frogClick= function() {
-    game.removeFrog();
-    renderer.render(game.getGameState());
-}
+// let frogClick= function() {
+//     game.removeFrog();
+//     renderer.render(game.getGameState());
+// }
 
 $('#start').on('click',function(){
     game.startNewGame();

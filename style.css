@@ -50,3 +50,10 @@
     width: 10px;  
 
 }
+#message {
+    position: relative;
+    display: inline-block;
+    left: 40%;
+    top: 47%;
+    font-size: 200%;
+}
